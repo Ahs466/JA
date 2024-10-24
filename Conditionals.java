@@ -33,6 +33,24 @@ public class Conditionals {
         */
 
         //Task 2
-
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Give me a number between 1 and 12");
+        int numberX = Integer.parseInt(sc.nextLine());
+        switch(numberX) {
+            case 12: case 1: case 2:
+                System.out.printf("Winter");
+                break;
+            case 3: case 4: case 5:
+                System.out.printf("Spring");
+                break;
+            case 6: case 7: case 8:
+                System.out.printf("Summer");
+                break;
+            case 9: case 10: case 11:
+                System.out.printf("Autumn");
+                break;
+            default:
+                System.out.printf("The number that you submitted is not between 1 and 12");
+        }
     }
 }
